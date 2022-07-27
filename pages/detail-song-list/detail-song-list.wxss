@@ -1,0 +1,4 @@
+/* pages/detail-song-list/detail-song-list.wxss */
+page {
+  padding: 0 20rpx 20rpx;
+}

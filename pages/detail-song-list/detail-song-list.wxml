@@ -1,0 +1,12 @@
+<!--pages/detail-song-list/detail-song-list.wxml-->
+<block wx:if="{{ranking !== ''}}">
+  <area-header title="{{playlistInfo.name}}" showRight="{{false}}"></area-header>
+</block>
+<block wx:else>
+  <detail-song-header playlistInfo="{{playlistInfo}}"></detail-song-header>
+</block>
+<view class="song-list">
+  <block wx:for="{{playlistInfo.tracks}}" wx:key="id">
+    <detail-song-item index="{{index+1}}" item="{{item}}" data-index="{{index}}" bindtap="handleDetailSongItemClick"></detail-song-item>
+  </block>
+</view>

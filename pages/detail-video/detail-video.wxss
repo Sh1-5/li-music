@@ -1,0 +1,34 @@
+/* pages/detail-video/detail-video.wxss */
+page {
+  padding-top: 225px;
+}
+
+.video {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+}
+
+.desc {
+  padding: 20rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  font-weight: 400;
+}
+
+.count {
+  font-size: 28rpx;
+  font-weight: 300;
+  margin-top: 10rpx;
+}
+
+.simi {
+  padding: 20rpx;
+}
+
+.title {
+  margin-bottom: 20rpx;
+}

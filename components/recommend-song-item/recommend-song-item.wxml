@@ -1,0 +1,11 @@
+<!--components/recommend-song-item/recommend-song-item.wxml-->
+<view class="item" bindtap="handleItemClick">
+  <image class="image" src="{{item.al.picUrl}}"></image>
+  <view class="content">
+    <view class="name">{{item.name}}</view>
+    <view class="source">{{item.ar[0].name}} · {{item.al.name}}</view>
+  </view>
+  <view class="arrow-right">
+    <image class="icon" src="/assets/images/icons/arrow-right.png"></image>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--components/playlist/playlist.wxml-->
+<area-header title="{{title}}"></area-header>
+<scroll-view class="playlist" scroll-x>
+  <block wx:for="{{playlist}}" wx:key="id">
+    <view class="playlist-item">
+      <playlist-item item="{{item}}" data-item="{{item}}" bindtap="handlePlaylistItem"></playlist-item>
+    </view>
+  </block>
+</scroll-view>

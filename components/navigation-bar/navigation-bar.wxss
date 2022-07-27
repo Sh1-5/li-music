@@ -1,0 +1,38 @@
+/* components/navigation-bar/navigation-bar.wxss */
+.bar {
+  text-align: center;
+
+  display: flex;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left,
+.right {
+  width: 120rpx;
+}
+
+.left-arrow,
+.center-title {
+  display: none;
+}
+
+.icon {
+  width: 40rpx;
+  display: block;
+}
+
+.left-slot:empty + .left-arrow,
+.center-slot:empty + .center-title {
+  display: block;
+}
+
+.center {
+  flex: 1;
+}

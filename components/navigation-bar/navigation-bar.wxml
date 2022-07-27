@@ -1,0 +1,21 @@
+<!--components/navigation-bar/navigation-bar.wxml-->
+<view class="navigation-bar">
+  <view style="height: {{statusBarHeight}}px;"></view>
+  <view class="bar" style="height: {{navigationBarHeight}}px;"> 
+    <view class="left" bindtap="handleLeftClick">
+      <view class="left-slot">
+        <slot name="left"></slot>
+      </view>
+      <view class="left-arrow">
+       <image class="icon" src="/assets/images/icons/arrow-left.png" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="center">
+      <view class="center-slot">
+        <slot name="center"></slot>
+      </view>
+      <view class="center-title">{{title}}</view>
+    </view>
+    <view class="right"></view>
+  </view>
+</view>
